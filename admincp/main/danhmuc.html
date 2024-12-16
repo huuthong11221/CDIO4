@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/indexadmin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>ADMIN</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;color: blue;">Chào mừng admin</h1>
+    </header>
+    <div class="navbar navbar-expand-lg ">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Thống kê</a></li>
+            <li class="nav-item"><a class="nav-link" href="danhmuc.html">Danh mục sản phẩm</a></li>
+            <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li>
+            <li class="nav-item"><a class="nav-link" href="donvivanchuyen.html">Quản lý đơn vị vận chuyển</a></li>
+            <li class="nav-item"><a class="nav-link" href="quanlydonhang.html">Quản lý đơn hàng</a></li>
+            <li class="nav-item"><a class="nav-link" href="quanlybaner.html">Quản lí baner</a></li>
+            <li class="nav-item"><a class="nav-link" href="quanlykhachhang.html">Quản lí khách hàng</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4 style="text-align: center;text-transform: uppercase;font-weight: bold;">Thêm danh mục sản phẩm</h4>
+<table border="1px" width="50%" style="border-collapse: collapse;">
+  <form method="POST" action="modules/quanlydanhmucsanpham/xuly.php">
+  <tr>
+    <td>Tên danh mục</td>
+    <td><input type="text" name="tendanhmuc" required></td>
+  </tr>
+  <tr>
+    <td>Thứ tự</td>
+    <td><input type="text" name="thutu" required></td>
+  </tr>
+  <tr>
+    <td   colspan="2"><input class="btn btn-warning" type="submit"name="themdanhmuc" value="Thêm danh mục sản phẩm"></td>
+  </tr>
+  </form>
+</table>
+<h4 style="text-align: center;text-transform: uppercase;font-weight: bold;">Liệt kê danh mục sản phẩm</h4>
+<table style="width: 100%;" border="1" style="border-collapse: collapse;">
+  <tr>
+    <th>ID</th>
+    <th>Tên danh mục</th>
+    <th>Quản lý</th>
+  <tr>
+    <td>1</td>
+    <td>Máy tính</td> 
+    <td>  <a  class="btn btn-primary" href="">Xóa</a> ||
+        <a  class="btn btn-secondary" href="">Sửa</a>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Tai nghe</td> 
+    <td>   <a  class="btn btn-primary" href="">Xóa</a> ||
+        <a  class="btn btn-secondary" href="">Sửa</a>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Tivi</td> 
+    <td>   <a  class="btn btn-primary" href="">Xóa</a> ||
+        <a  class="btn btn-secondary" href="">Sửa</a>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Điện thoại</td> 
+    <td>  <a  class="btn btn-primary" href="">Xóa</a> ||
+        <a  class="btn btn-secondary" href="">Sửa</a>
+  </tr>
+<style>
+    
+    
+</style>
+</table>
+    </div>
+    <div class="clear"></div>
+    <footer class="footer">
+        <div class="container row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">visit website</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">download</a></li>
+                    <li><a href="#">changelog</a></li>
+                    <li><a href="#">github</a></li>
+                    <li><a href="#">all version</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

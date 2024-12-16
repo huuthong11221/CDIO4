@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/giohang.css">
+    <link rel="stylesheet" href="../css/hinhthuc.css">
+    <title>WEB CÔNG NGHỆ </title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- <div class="header">
+            <img src="../images/banner.webp" alt="" width="100%" height="250px">
+        </div> -->
+        <div class="menu">
+            <ul class="list_menu">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><i class="fa-solid fa-list"></i> Danh mục sản phẩm</a>
+                    <div class="dropdown-content">
+                        <a href="hot.html">Sản phẩm hot</a>
+                        <a href="banchay.html">Sản phẩm bán chạy</a>
+                    </div>
+                </li>
+                <li><a href="giohang.html"><span id="cart-count"  style="color: blue;"></span> <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone-volume"></i> Liên hệ</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Đăng nhập</a></li>
+            </ul>
+            <ul>
+                <li class="search-box">
+                    <input type="text" id="search-input" placeholder="Tìm kiếm...">
+                    <button id="search-button">Tìm</button>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <h1 style="text-align: center;">Danh mục sản phẩm</h1>
+                <ul class="list_sidebar">
+                    <hr>
+                    <li><a href="maytinh.html">Máy tính</a></li>
+                    <hr>
+                    <li><a href="dienthoai.html">Điện thoại</a></li>
+                    <hr>
+                    <li><a href="tivi.html">Tivi</a></li>
+                    <hr>
+                    <li><a href="tainghe.html">Tai nghe</a></li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="maincontent">
+                
+                <form id="myForm" autocomplete="off">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Họ và tên</label>
+                                    <input type="text" id="name" placeholder="...." class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" id="phone" placeholder="...." class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="address">Địa chỉ nhận hàng</label>
+                                    <input type="email" id="address" placeholder="...." class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="note">Ghi chú</label>
+                                    <input type="text" id="note" placeholder="...." class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="shipping">Đơn vị vận chuyển</label>
+                                    <select id="shipping" class="form-control">
+                                        <option value="giao_hang_nhanh">Giao hàng nhanh</option>
+                                        <option value="giao_hang_tiet_kiem">Giao hàng tiết kiệm</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="submitBtn" class="btn btn-primary">Thanh toán</button>
+                    </div>
+                </form>
+                <h1>Giỏ hàng</h1>
+
+                <div class="table-container">
+                    <table id="cart-table" border="1">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+        <div class="footer">
+          <div class="footer">
+            <footer class="footer">
+                <div class="container row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">visit website</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">download</a></li>
+                            <li><a href="#">changelog</a></li>
+                            <li><a href="#">github</a></li>
+                            <li><a href="#">all version</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" ><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+        </div>
+   
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../js/giohang.js"></script>
+<script src="../js/index.js"></script>

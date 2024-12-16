@@ -1,0 +1,52 @@
+/* Chỉnh màu nền và kích thước chữ cho navbar */
+.navbar {
+    background-color:#808080;
+    padding: 10px;
+  }
+  
+  /* Chỉnh màu chữ và thêm hiệu ứng hover cho các nav-link */
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #0ef;
+  }
+  
+  /* Chỉnh kiểu dáng cho nút toggle trên thiết bị di động */
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  
+  /* Đặt màu chữ và hiệu ứng hover cho nút toggle */
+  .navbar-toggler {
+    color: #fff;
+  }
+  
+  .navbar-toggler:hover {
+    color: #ecf0f1;
+  }
+  
+  /* Chỉnh kiểu dáng chữ và hiệu ứng hover cho thẻ a trong dropdown menu */
+  .navbar-nav .nav-item.dropdown:hover .nav-link {
+    color: #ecf0f1;
+  }
+  
+  /* Chỉnh kiểu dáng cho dropdown menu */
+  .dropdown-menu {
+    background-color:#808080;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    color: #fff;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #2980b9;
+  }
+  

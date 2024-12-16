@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/tivi1.css">
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+    <title>WEB CÔNG NGHỆ </title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- <div class="header">
+            <img src="../images/banner.webp" alt="" width="100%" height="250px">
+        </div> -->
+        <div class="menu">
+            <ul class="list_menu">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><i class="fa-solid fa-list"></i> Danh mục sản phẩm</a>
+                    <div class="dropdown-content">
+                        <a href="hot.html">Sản phẩm hot</a>
+                        <a href="banchay.html">Sản phẩm bán chạy</a>
+                    </div>
+                </li>
+                <li><a href="giohang.html"><span id="cart-count"  style="color: blue;"></span> <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone-volume"></i>Liên hệ</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Đăng nhập</a></li>
+            </ul>
+            <ul>
+              <li class="search-box">
+                  <input type="text" id="search-input" placeholder="Tìm kiếm...">
+                  <button id="search-button">Tìm</button>
+              </li>
+          </ul>
+        </div>
+            <div class="maincontent">
+                <div class="wrapper_chitiet">
+                    <div class="hinhanh_sanpham">
+                                <img width="30%"  src="../images/p4.jpg" alt="" height="230px">
+                    </div>
+                                <h3 style="margin: 0;" class="product-name">Tên sản phẩm: Laptop Huwei</h3>
+                                <p >Mã sản phẩm: 001</p>
+                                <p  class="product-price">Giá sản phẩm:8.000.000đ</p>
+                                <p>Số lượng sp:100</p>
+                                <p>Danh mục sản phẩm: Máy Tính </p>
+                                <p><input class="mua-ngay-btn" style="padding: 10px;background:#0ef;" type="submit" value="Mua ngay"></p>
+                                <button class="btn btn-primary open-form" onclick="displayForm()">Đánh giá sản phẩm</button>
+                    </div>
+                    <div class="tabs">
+                        <ul id="tabs-nav">
+                          <li><a href="#tab1">Hình ảnh</a></li>
+                          <li><a href="#tab2">Thông số kĩ thuật</a></li>
+                        </ul> 
+                        <div id="tabs-content">
+                          <div id="tab1" class="tab-content">
+                            <img width="100%"  src="../images/p4.jpg" alt="">
+                        </div>
+                          </div>
+                          <div id="tab2" class="tab-content">
+                            <p>Laptop HUAWEI MateBook D 15 AMD là một trong những sản phẩm laptop hội tụ đầy đủ các ưu điểm từ cấu hình, màn hình đến thiết kế. Được trang bị chipset R7-5700U, HUAWEI MateBook D15 luôn sẵn sàng xử lí mọi nhu cầu công việc, giải trí. Chất lượng hình ảnh của máy cũng đạt được độ sắc nét cao và mượt mà với tần số quét 60Hz cùng độ phân giải Full HD. Ngoài ra, chiếc HUAWEI MateBook D 15 này còn thuận tiện đi cùng bạn muôn nơi với khối lượng chỉ 1,63kg.</p>
+                          </div>
+                        </div> 
+                      </div>
+                      <!-- Form ẩn ban đầu -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Nội dung của form sẽ ở đây -->
+        <h2>Bình luận khách hàng</h2>
+        <section>
+            <div class="rt-container">
+                <div class="col-rt-12">
+                    <div class="Scriptcontent">
+                        <div class="feedback">
+                            <form method="POST" action="" enctype="multipart/form-data" id="commentForm">
+                                <label>Đánh giá sao</label><br>
+                                <span class="star-rating">
+                                    <input type="radio" name="sosao" value="1"><i></i>
+                                    <input type="radio" name="sosao" value="2"><i></i>
+                                    <input type="radio" name="sosao" value="3"><i></i>
+                                    <input type="radio" name="sosao" value="4"><i></i>
+                                    <input type="radio" name="sosao" value="5"><i></i>
+                                </span>
+                                <div class="clear"></div>
+                                <hr class="survey-hr">
+                                <label>Hình ảnh đi kèm</label>
+                                <span>
+                                    <input type="file" name="hinhanh" required>
+                                </span>
+                                <div class="clear"></div>
+                                <hr class="survey-hr">
+                                <label for="m_3189847521540640526commentText">Nhận xét của khách hàng về sản phẩm</label><br /><br />
+                                <textarea cols="75" name="noidung" rows="5" style="width: 100%;resize: none;"></textarea><br>
+                                <br>
+                                <div class="clear"></div>
+                                <input style="background:#43a7d5;color:#fff;padding:12px;border:0" type="submit" name="binhluan" value="Bình luận">&nbsp;
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div> 
+        </div>
+        <div class="clear"></div>
+        <div class="footer">
+          <div class="footer">
+            <footer class="footer">
+                <div class="container row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">visit website</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">download</a></li>
+                            <li><a href="#">changelog</a></li>
+                            <li><a href="#">github</a></li>
+                            <li><a href="#">all version</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+        </div>
+   
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/chitietsanpham.js"></script>
+<script>
+    // Hiển thị form khi nút được nhấp
+    function displayForm() {
+        $("#myModal").css("display", "block");
+    }
+
+    // Ẩn form khi nút đóng hoặc màn hình mờ được nhấp
+    $(".close, #myModal").on("click", function (event) {
+        if (event.target === this || event.target.classList.contains("close")) {
+            $("#myModal").css("display", "none");
+        }
+    });
+
+    // Kiểm tra sự kiện click có xảy ra trên nút "Bình luận" hay không
+    $(".binhluan").on("click", function (event) {
+        if (event.target.classList.contains("open-form")) {
+            displayForm();
+        }
+    });
+
+</script>
